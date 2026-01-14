@@ -10,23 +10,23 @@
     
     <div class="container">
         <div class="sidebar">
-            <p class="greeting">Welcome back</p>
+            <p class="greeting">Welcome Back!</p>
             <p class="info">Enter the information required to create an account.</p>
-            <p>
+            <p class="login">
                 Alredy have account?
                 <a href="#">Log In</a>
             </p>
         </div>
-        <div class="form-container">
-            <form action="#" method="post">
-                 <h1>Create Account</h1>
+        <form action="https://httpbin.org/post" method="post" class="form-container">
+            <h1>Create Account</h1>
+            
+            <p></p>
+            <input type="text" class="name" name="fullName" placeholder="Full Name" style="display: block;" required>
+            <input type="email" class="email" name="email" placeholder="Email" style="display: block;" required>                 
+            <input type="password" class="password" name="password" style="display: block;" placeholder="Password" required>
 
-                 <input type="text" class="name" placeholder="John Doe" required>
-                 <input type="email" class="email" name="email" placeholder="JohnDoe@gmail.com" required>
-                 <input type="password" class="password" required>
-
-                 <button type="submit" class="create-acc">Create Account</button>
-            </form>
+            <button type="submit" class="create-acc" style="display: block;">Sign Up</button>
+        </form>
         </div>
     </div>
 
